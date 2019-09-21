@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1E47E5AD2335949D0036A47D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5AC2335949D0036A47D /* AppDelegate.swift */; };
-		1E47E5AF2335949D0036A47D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5AE2335949D0036A47D /* ViewController.swift */; };
 		1E47E5B22335949D0036A47D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E47E5B02335949D0036A47D /* Main.storyboard */; };
 		1E47E5B52335949D0036A47D /* Document_Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5B32335949D0036A47D /* Document_Core_Data.xcdatamodeld */; };
 		1E47E5B7233594A00036A47D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E47E5B6233594A00036A47D /* Assets.xcassets */; };
 		1E47E5BA233594A00036A47D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E47E5B8233594A00036A47D /* LaunchScreen.storyboard */; };
 		1E47E5C5233594A00036A47D /* Document_Core_DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5C4233594A00036A47D /* Document_Core_DataTests.swift */; };
 		1E47E5D0233594A00036A47D /* Document_Core_DataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5CF233594A00036A47D /* Document_Core_DataUITests.swift */; };
+		1E47E5DE233596560036A47D /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5DD233596560036A47D /* DocumentsViewController.swift */; };
+		1E47E5E02335966A0036A47D /* SingleDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5DF2335966A0036A47D /* SingleDocumentViewController.swift */; };
+		1E47E5E72335A0000036A47D /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5E52335A0000036A47D /* Document+CoreDataClass.swift */; };
+		1E47E5E82335A0000036A47D /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E5E62335A0000036A47D /* Document+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		1E47E5A92335949D0036A47D /* Document Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Document Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E47E5AC2335949D0036A47D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E47E5AE2335949D0036A47D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E47E5B12335949D0036A47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E47E5B42335949D0036A47D /* Document_Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document_Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		1E47E5B6233594A00036A47D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		1E47E5CB233594A00036A47D /* Document Core DataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Document Core DataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E47E5CF233594A00036A47D /* Document_Core_DataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document_Core_DataUITests.swift; sourceTree = "<group>"; };
 		1E47E5D1233594A00036A47D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E47E5DD233596560036A47D /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		1E47E5DF2335966A0036A47D /* SingleDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDocumentViewController.swift; sourceTree = "<group>"; };
+		1E47E5E52335A0000036A47D /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1E47E5E62335A0000036A47D /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		1E47E5A02335949C0036A47D = {
 			isa = PBXGroup;
 			children = (
+				1E47E5E52335A0000036A47D /* Document+CoreDataClass.swift */,
+				1E47E5E62335A0000036A47D /* Document+CoreDataProperties.swift */,
 				1E47E5AB2335949D0036A47D /* Document Core Data */,
 				1E47E5C3233594A00036A47D /* Document Core DataTests */,
 				1E47E5CE233594A00036A47D /* Document Core DataUITests */,
@@ -100,12 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				1E47E5AC2335949D0036A47D /* AppDelegate.swift */,
-				1E47E5AE2335949D0036A47D /* ViewController.swift */,
 				1E47E5B02335949D0036A47D /* Main.storyboard */,
 				1E47E5B6233594A00036A47D /* Assets.xcassets */,
 				1E47E5B8233594A00036A47D /* LaunchScreen.storyboard */,
 				1E47E5BB233594A00036A47D /* Info.plist */,
 				1E47E5B32335949D0036A47D /* Document_Core_Data.xcdatamodeld */,
+				1E47E5DD233596560036A47D /* DocumentsViewController.swift */,
+				1E47E5DF2335966A0036A47D /* SingleDocumentViewController.swift */,
 			);
 			path = "Document Core Data";
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E47E5AF2335949D0036A47D /* ViewController.swift in Sources */,
+				1E47E5DE233596560036A47D /* DocumentsViewController.swift in Sources */,
+				1E47E5E02335966A0036A47D /* SingleDocumentViewController.swift in Sources */,
+				1E47E5E82335A0000036A47D /* Document+CoreDataProperties.swift in Sources */,
 				1E47E5B52335949D0036A47D /* Document_Core_Data.xcdatamodeld in Sources */,
+				1E47E5E72335A0000036A47D /* Document+CoreDataClass.swift in Sources */,
 				1E47E5AD2335949D0036A47D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
